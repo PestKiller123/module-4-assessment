@@ -9,3 +9,13 @@ const getCompliment = () => {
 };
 
 complimentBtn.addEventListener('click', getCompliment)
+
+const fortuneBtn = document.getElementById("fortuneButton")
+const getFortune = () => {
+    axios.get("http://localhost:4000/api/fortune/")
+    .then(res => {
+        const data = res.data;
+        alert(data);
+    })
+}
+fortuneBtn.addEventListener('click', getFortune)
