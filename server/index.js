@@ -7,7 +7,7 @@ app.use(cors());
 
 app.use(express.json());
 
-const { getCompliment, getFortune, getMotivation, createGoal, getGoal } = require('./controller')
+const { getCompliment, getFortune, getMotivation, getGoal, createGoal } = require('./controller')
 
 app.get("/api/compliment", getCompliment);
 app.get("/api/fortune", getFortune);

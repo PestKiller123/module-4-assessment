@@ -1,7 +1,5 @@
 const goals = require('./db.json')
 let globalId = 2
-
-
 module.exports = {
 
     getCompliment: (req, res) => {
